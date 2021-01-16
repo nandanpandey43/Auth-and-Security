@@ -21,6 +21,7 @@ const userSchema = new mongoose.Schema({
 });
 
 
+
 ///////////////////// encryption of password here /////////////////////
 userSchema.plugin(encrypt, { secret: process.env.SECRET, encryptedFields: ['password'] });
 
